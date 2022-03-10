@@ -32,6 +32,7 @@
    // TODO: get "htmlBoard" variable from the item in HTML w/ID of "board"
     const htmlBoard = document.querySelector("#board");
    // TODO: add comment for this code
+   //creates a top element that can listen to clicks and is appended to the board
    const top = document.createElement("tr");
    top.setAttribute("id", "column-top");
    top.addEventListener("click", handleClick);
@@ -44,6 +45,7 @@
    htmlBoard.append(top);
  
    // TODO: add comment for this code
+   //Helps to create the table elements and organizes the rows, as well as identifying which row and coloumn it's in
    for (var y = 0; y < HEIGHT; y++) {
      const row = document.createElement("tr");
      for (var x = 0; x < WIDTH; x++) {
